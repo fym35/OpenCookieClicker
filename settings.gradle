@@ -1,0 +1,2 @@
+include ':Cookie Clicker +'
+rootProject.name = "CookieClicker"
