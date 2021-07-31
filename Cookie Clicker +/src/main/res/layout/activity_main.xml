@@ -24,7 +24,7 @@
         android:id="@+id/textView2"
         android:layout_width="301dp"
         android:layout_height="52dp"
-        android:text="Cookie Clicker"
+        android:text="Open Cookie Clicker"
         android:textColor="#000000"
         android:textSize="45sp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
