@@ -1,2 +1,2 @@
 # OpenCookieClicker
-Open Source cookie clicker app for android
+Open Source cookie clicker app for android written in kotlin
