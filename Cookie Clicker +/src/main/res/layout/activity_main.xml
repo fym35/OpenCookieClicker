@@ -5,6 +5,8 @@
     android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#151414"
+    android:backgroundTint="#151414"
     tools:context=".MainActivity">
 
     <ImageButton
@@ -12,6 +14,7 @@
         android:layout_width="457dp"
         android:layout_height="419dp"
         android:background="@drawable/rounded_corners"
+        android:backgroundTint="#151414"
         android:scaleType="fitCenter"
         android:src="@drawable/cookie"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +27,7 @@
         android:id="@+id/textView2"
         android:layout_width="301dp"
         android:layout_height="52dp"
-        android:text="Open Cookie Clicker"
+        android:text="OpenCookieClicker"
         android:textColor="#000000"
         android:textSize="45sp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton"
