@@ -31,10 +31,10 @@ class UpgradesActivity : AppCompatActivity(){
         handleAutoClickerUpgrade()
     }
     fun refreshTextViews(){
-        autoClickerTextView.text = "Autoclicker upgrade level: ${cookieData.autoClickerUpgradeLevel}\n" + "Upgrade cost: ${cookieData.autoClickerPrice}"
-        workersTextView.text = "Working works: ${cookieData.workersUpgradeLevel}\nWorker cost: ${cookieData.workersPrice}"
-        bakeriesTextView.text = "Baking bakeries: ${cookieData.bakeriesUpgradeLevel}\nBakery cost: ${cookieData.bakeriesPrice}"
-        upgradeClickTextView.text = "Upgrade click level: ${cookieData.clickUpgradeLevel}\nUpgrade cost: ${cookieData.getClickUpgPrice()}"
+        autoClickerTextView.text = "Cursors: ${cookieData.autoClickerUpgradeLevel}\n" + "Upgrade cost: ${cookieData.autoClickerPrice}"
+        workersTextView.text = "Workers: ${cookieData.workersUpgradeLevel}\nWorker cost: ${cookieData.workersPrice}"
+        bakeriesTextView.text = "Bakeries: ${cookieData.bakeriesUpgradeLevel}\nBakery cost: ${cookieData.bakeriesPrice}"
+        upgradeClickTextView.text = "Click Upgrade: ${cookieData.clickUpgradeLevel}\nUpgrade cost: ${cookieData.getClickUpgPrice()}"
     }
 
     fun setExitButton(){
@@ -46,6 +46,7 @@ class UpgradesActivity : AppCompatActivity(){
             finish()
         }
     }
+
     fun initClickUpgradeButton(){
         val clickUpgradeButton = findViewById<Button>(R.id.clickUpgradeButton)
         clickUpgradeButton.setOnClickListener{
@@ -79,11 +80,7 @@ class UpgradesActivity : AppCompatActivity(){
                 cookieData.updateWorkers()
                 refreshTextViews()
             } else {
-                Toast.makeText(
-                    applicationContext,
-                    "You cannot buy this upgrade!",
-                    Toast.LENGTH_LONG
-                ).show()
+                Toast.makeText(applicationContext, "You cannot buy this upgrade!", Toast.LENGTH_LONG).show()
             }
         }
 
@@ -92,12 +89,7 @@ class UpgradesActivity : AppCompatActivity(){
                 cookieData.updateBakeries()
                 refreshTextViews()
             } else {
-                Toast.makeText(
-                    applicationContext,
-                    "You cannot buy this upgrade!",
-                    Toast.LENGTH_LONG
-                ).show()
-
+                Toast.makeText(applicationContext, "You cannot buy this upgrade!", Toast.LENGTH_LONG).show()
             }
         }
     }

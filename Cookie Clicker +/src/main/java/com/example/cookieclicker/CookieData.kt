@@ -26,8 +26,20 @@ class CookieData : Serializable {
     var autoClickerPrice = 500
     var workersPrice = 2000
     var bakeriesPrice = 5000
+    var BombGadgetActive = false
+    var KeyGadgetActive = false
     private var NewBakery = false
     private val BakeryBonusCoef = 6
+
+    fun getKeyPrice(): Long {
+        var upgValue = 90000
+        return upgValue.toLong()
+    }
+
+    fun getBombPrice(): Long {
+        var upgValue = 70000
+        return upgValue.toLong()
+    }
 
 
     override fun toString(): String {
@@ -47,7 +59,6 @@ class CookieData : Serializable {
 
     fun calculateClickValue() {
         clickValue *= 2
-
     }
         fun updateAutoClicker() {
             cookiesCounter -= autoClickerPrice
