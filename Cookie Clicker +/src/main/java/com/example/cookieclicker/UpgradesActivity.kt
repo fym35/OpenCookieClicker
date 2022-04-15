@@ -1,4 +1,4 @@
-package com.example.cookieclicker
+package gd.rf.konggdev.cookieclicker
 
 import android.app.Activity
 import android.content.Intent
