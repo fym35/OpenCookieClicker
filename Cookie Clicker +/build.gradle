@@ -8,11 +8,11 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.cookieclicker"
-        minSdkVersion 26
+        applicationId defaultApplicationId
+        minSdk 24
         targetSdkVersion 30
         versionCode 1
-        versionName "1.0"
+        versionName '1.4'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
