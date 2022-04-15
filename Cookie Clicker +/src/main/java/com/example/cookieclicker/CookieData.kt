@@ -1,4 +1,4 @@
-package com.example.cookieclicker
+package gd.rf.konggdev.cookieclicker
 
 import android.graphics.Color
 import java.io.Serializable
