@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-package="com.example.cookieclicker">
+package="gd.rf.konggdev.cookieclicker">
 
 <application
     android:allowBackup="true"
@@ -9,22 +9,22 @@ package="com.example.cookieclicker">
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/Theme.CookieClicker">
-    <activity android:name=".MainActivity">
+    <activity android:name="gd.rf.konggdev.cookieclicker.MainActivity">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
     </activity>
-    <activity android:name=".UpgradesActivity">
+    <activity android:name="gd.rf.konggdev.cookieclicker.UpgradesActivity">
 
     </activity>
-    <activity android:name=".GadgetsActivity">
+    <activity android:name="gd.rf.konggdev.cookieclicker.GadgetsActivity">
 
     </activity>
-    <activity android:name=".BakeryActivity">
+    <activity android:name="gd.rf.konggdev.cookieclicker.BakeryActivity">
 
     </activity>
-    <activity android:name=".SettingsActivity">
+    <activity android:name="gd.rf.konggdev.cookieclicker.SettingsActivity">
 
     </activity>
 </application>
